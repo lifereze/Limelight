@@ -15,3 +15,33 @@ $thin: 300;
 $normal: 400;
 $bold: 600;
 $br: 4px;
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+      overflow-y: scroll; 
+  }
+  
+  body {
+    background:$body-bg;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  a {
+    text-decoration:none;
+    color:$main;
+    transition:.5s ease;
+    &:hover {
+      color:$main-dark;
+    }
+  }
+  
+  .form {
+    background:rgba($form-bg,.9);
+    padding: 40px;
+    max-width:600px;
+    margin:40px auto;
+    border-radius:$br;
+    box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+  }
