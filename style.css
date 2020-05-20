@@ -45,3 +45,12 @@ $br: 4px;
     border-radius:$br;
     box-shadow:0 4px 10px 4px rgba($form-bg,.3);
   }
+  .tab-group {
+    list-style:none;
+    padding:0;
+    margin:0 0 40px 0;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
