@@ -58,4 +58,3 @@ function Community(users, posts, images) {
   this.posts = post;
   this.images = images;
 }
-
