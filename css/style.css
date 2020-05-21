@@ -54,11 +54,30 @@ header {
 .post-slider {
   border: 1px solid red;
 }
-
+.post-slider .slider-title{
+  text-align: center;
+}
+.post-slider .next {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  font-size: 2em;
+  color: gray;
+  cursor: pointer;
+}
+.post-slider .prev {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  font-size: 2em;
+  color: gray;
+  cursor: pointer;
+}
 .post-slider .post-wrapper {
   width: 84%;
   height: 350px;
   margin: 0px auto;
+  overflow: hidden;
   border: 1px dashed red;
 }
 .post-slider .post-wrapper .post {
