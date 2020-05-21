@@ -138,7 +138,7 @@ a {
   padding: 40px;
   max-width:600px;
   margin:40px auto;
-  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+  box-shadow:0 4px 10px 4px rgba(rgb(169, 169, 169));
 }
 .tab-group {
   list-style:none;
@@ -171,8 +171,8 @@ a {
 }
 h1 {
   text-align:center;
-  color:$white;
-  font-weight:$thin;
+  color:white;
+  font-weight: 100px;
   margin:0 0 40px;
 }
 
@@ -197,7 +197,7 @@ input, textarea {
   padding:5px 10px;
 }
 textarea {
-  border:2px solid $gray-light;
+  border:2px solid gray;
   resize: vertical;
 }
 
@@ -228,10 +228,9 @@ textarea {
   border-radius:0;
   padding:15px 0;
   font-size:2rem;
-  font-weight:$bold;
+  font-weight: bold;
   text-transform:uppercase;
   letter-spacing:.1em;
-  background:$main;
   transition:all.5s ease;
   -webkit-appearance: none;
   &:hover, &:focus {
@@ -248,4 +247,5 @@ textarea {
   margin-top:-20px;
   text-align:right;
 }
+/* End of Form styling */
 
