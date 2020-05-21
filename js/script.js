@@ -6,17 +6,20 @@ form.addEventListener('submit',(event) => {
 
     if (username.value === '' || username.value === null ) {
         console.log('please enter your username')
-    } 
+    }; 
+    else (username.length === 'firstname' + 'lastname' ) {
+      console.log('Enter your first name and last name')
+    };
      
     if (password.length <= 6) {
         console.log('password must be longer than 6 character')
-    } 
+    }; 
     else if (password.length >= 20) {
         console.log('password must be less than 20 characters')
-    }
+    };
     else (password.value === 'password') {
         console.log('Passoward cannot be password')  
-    }
+    };
     
     
     function validate(email)  
@@ -39,7 +42,7 @@ form.addEventListener('submit',(event) => {
             }
           }   
         }        
-    }
+    };
 
 
     
