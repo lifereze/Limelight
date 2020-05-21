@@ -73,3 +73,24 @@ form.addEventListener('submit',(event) => {
 
 
 
+//First name, Second name, Email address
+
+function User(username, email, password) {
+  this.username = username;
+  this.email = email;
+  this.password = password;
+}
+
+function Post(user, message, comments, stars, community) {
+  this.user = user;
+  this.message = message;
+  this.comments = comments;
+  this.stars = stars;
+  this.community = community;
+}
+
+function Community(users, posts, images) {
+  this.users = users;
+  this.posts = post;
+  this.images = images;
+}
