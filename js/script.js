@@ -1,57 +1,52 @@
-const username = document.getElementByclassName ('')
-const email = document.getElementByclassName ('')
-const password = document.getElementsByClassName ('')
-
-form.addEventListener('submit',(event) => {
-
-    if (username.value === '' || username.value === null ) {
-        console.log('please enter your username')
-    }; 
-    else (username.length === 'firstname' + 'lastname' ) {
-      console.log('Enter your first name and last name')
-    };
-     
-    if (password.length <= 6) {
-        console.log('password must be longer than 6 character')
-    }; 
-    else if (password.length >= 20) {
-        console.log('password must be less than 20 characters')
-    };
-    else (password.value === 'password') {
-        console.log('Passoward cannot be password')  
-    };
-    
-    
-    function validate(email)  
-    {
-     var gmail = [];
-     for (var i = 0; i < email.length; i++) {
-         var charr = email.charAt(i);
-         if (charr == '@') {
-            i++;
-            for (var j = 0; j < 5; j++) {
-                gmail.push(email.charAt(i));
-                i++;
+$(document).ready(function (event) {
+    $("form#form_id").submit(function (event) {
+        //signup
+        var inputtedFirstName = $("input#new-first-name").val();
+        var inputtedLastName = $("input#new-last-name").val();
+        var inputtedEmail = $("input#new-email").val();
+        var newUser = new User(inputtedFirstName, inputtedLastName, inputtedEmail);
+        // Name and Email validation Function.
+        function validation() {
+            const username = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+            const password = document.getElementById("password").value;
+            if (name === "" || email === "" || password === "") {
+                alert("Please fill all fields...!!!!!!");
+                return false;
+            } else if (!email.match(emailReg)) {
+                alert("Invalid Email...!!!!!!");
+                return false;
+            } else if (name === "firstName" && name === "lastName") {
+                alert("kindly enter both firstName and lastName");
+                return false;
+            } else if (password <= 6) {
+                alert("please enter more than 6 characters");
+                return false;
+            } else {
+                return true;
             }
-            var checkGmail = gmail.join('');
-            if (checkGmail != 'gmail') {
-                console.log("Please make sure you have the correct email!");
-            } 
-            else {
-                console.log("Good job");
+        }
+        //login
+        // Name and password validation Function.
+        function validation() {
+            const username = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+            if (name === "" || password === "") {
+                alert("Please fill all fields...!!!!!!");
+                return false;
+            } else if (password <= 6) {
+                alert("please enter more than 6 characters");
+                return false;
+            } else {
+                return true;
             }
-          }   
-        }        
-    };
+        }
 
+        event.preventDefault();
+    });
+});
 
-    
-    
-
-
-
-   event.preventDefault() 
-   }); 
    // START of jquery code for trendingProjects CAROUSEL
    / Instantiate the Bootstrap carousel
  $('.multi-item-carousel').carousel({
